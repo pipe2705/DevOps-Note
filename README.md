@@ -60,8 +60,8 @@ Use the `-i` flag with a path to the private key to log in with it. For example,
 
 
 ## Domain Name
-I like to use Namecheap. Buy a domain with some sort of Whois protection, otherwise your personal information will be publicly available on the internet. You want the domain to "point" to the IP address of your server.
+I like to use [Namecheap](namecheap.com/). Buy a domain with some sort of Whois protection, otherwise your personal information will be publicly available on the internet! 
 
-In order to associate the domain to an IP address you'll add a *host record*, specifically an *A record*. An A record includes a *Host* for specifying the subdomain, such as `www` or `@` for a catch-all, the *Value* will be the IP address of the server. *TTL* is how long until the changes take place; you can leave this at its default value.
+You want the domain to "point" to the IP address of your server. You'll do that by adding a *host record*, specifically an *A record*. An A record includes a *Host* for specifying the subdomain, such as `www` or `@` for a catch-all, the *Value* will be the IP address of the server. *TTL* is how long until the changes take place; you can leave this at its default value.
 
 Once the domain is set up it will take a few minutes for the internet to catch up. You can `ping` the domain to see if it now responds with the new IP address and use SSH with the domain name instead of the IP address. For example, with an `underwater.pizza` domain I can SSH with `ssh tyler@underwater.pizza`. 
