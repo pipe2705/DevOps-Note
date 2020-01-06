@@ -41,7 +41,9 @@ To install: `sudo apt install ufw`.
 
 We need to be very careful that we don't immediately enable the firewall without opening any ports, otherwise we will lose the ability to ssh into the server! To enable SSH open port 22 by running `sudo ufw allow 22`. 
 
-To enable the firewall run `sudo ufw enable`.
+Before enabling we need to run `sudo ufw status` to make sure it is runnign correctly. 
+
+To enable the firewall run `sudo ufw enable`. we may need to hit `y` to  continue. So now only port 22 is open. 
 
 
 ## SSH Key
